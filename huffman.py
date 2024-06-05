@@ -23,7 +23,7 @@ class HuffmanCoding:
 		def __eq__(self, other):
 			if(other == None):
 				return False
-			if(not isinstance(other, HeapNode)):
+			if(not isinstance(other, HuffmanCoding.HeapNode)):
 				return False
 			return self.freq == other.freq
 
@@ -173,4 +173,3 @@ class HuffmanCoding:
 
 		print("Decompressed")
 		return output_path
-
